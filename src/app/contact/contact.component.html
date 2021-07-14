@@ -1,0 +1,25 @@
+<form [formGroup] = "signUp" (ngSubmit) = "onSubmit()">
+    <label for="fname">FIRST NAME:</label><br>
+    <input type="text"
+            id="fname"
+            name="fname"
+            formControlName = "fname"
+            required
+    /><br>
+    <label>LAST NAME :</label><br>
+    <input type="text"
+            id="lname"
+            name="lname"
+            formControlName = "lname"
+            required
+    /><br>
+    <label>AGE:</label><BR>
+    <input type="text"
+            id="age"
+            name="age"
+            formControlName = "age"
+            required
+    /><br>
+    <button type="submit" [disabled] = "!signUp.valid">SUBMIT</button>
+    <button (click)="clear()">CLEAR</button>
+</form>

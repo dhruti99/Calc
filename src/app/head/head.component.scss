@@ -1,0 +1,21 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    color: blanchedalmond;
+}
+button{
+    background-color: black;
+    color: blanchedalmond;
+}
+button:hover{
+    border-bottom: 2px solid white;
+    background-color: rgb(116, 241, 241);
+    color: black;
+}
+.heading{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
